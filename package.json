@@ -1,8 +1,25 @@
 {
+  "name": "blockcerts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluebell2505/blockcerts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluebell2505/blockcerts/issues"
+  },
+  "homepage": "https://github.com/bluebell2505/blockcerts#readme",
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
     "dotenv": "^17.2.1",
-    "ethers": "^5.8.0",
     "hardhat": "^2.26.1"
   },
   "dependencies": {
