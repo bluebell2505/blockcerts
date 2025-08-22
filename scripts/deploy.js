@@ -8,7 +8,7 @@ async function main() {
   console.log("✅ CertificateIssuer deployed to:", contract.address);
 }
 
-main().catch((error) => {
+main().catch((error) => { 
   console.error(error);
   process.exitCode = 1;
 });
