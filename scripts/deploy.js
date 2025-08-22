@@ -2,10 +2,12 @@ const { ethers } = require("hardhat");
 
 async function main() {
   const CertificateIssuer = await ethers.getContractFactory("CertificateIssuer");
-  const contract = await CertificateIssuer.deploy();
-  await contract.deployed();
+  const certificateIssuer = await CertificateIssuer.deploy();
 
-  console.log("✅ CertificateIssuer deployed to:", contract.address);
+  // ✅ No need for .deployed() — just wait for deploy transaction
+  await certificateIssuer.waitForDeployment();
+
+  console.log("CertificateIssuer deployed to:", await certificateIssuer.getAddress());
 }
 
 main().catch((error) => {
