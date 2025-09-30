@@ -1,7 +1,7 @@
 
 ---
 
-# 📦 Backend — Event Certification Platform
+# 📦 Backend — Blockchain-Based Academic Certificate Issuance & Verification Platform
 
 > A modular backend for managing events, participants, registrations, attendance via QR, and on-chain certificate issuance.
 
@@ -21,7 +21,7 @@ This backend powers an event management and certification system with the follow
 
 ## 🧍 Team Division
 
-### 👨‍💻 **Person A — Core Backend**
+### 👨‍💻 **Vasundhara Dixit — Core Backend**
 
 Responsible for API architecture, DB schema, authentication, and QR logic.
 
@@ -37,7 +37,7 @@ Responsible for API architecture, DB schema, authentication, and QR logic.
 
 ---
 
-### 👩‍💻 **Person B — Certificates + Blockchain Integration**
+### 👩‍💻 **Abhinav Mehta — Certificates + Blockchain Integration**
 
 Responsible for certificate minting, IPFS uploads, smart contract calls, and verification endpoints.
 
@@ -81,6 +81,11 @@ backend/
 │   │   ├── registrations.js
 │   │   ├── attendance.js
 │   │   └── certificates.js
+│   ├── services/
+│   │   ├── blockchainService.js
+│   │   ├── certService.js
+│   │   ├── ipfsService.js
+│   │   └── qrService.js
 │   ├── utils/
 │   │   ├── crypto.js
 │   │   ├── validator.js
@@ -101,7 +106,7 @@ backend/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/bluebell2505/blockcerts.git
 cd backend
 ```
 
