@@ -1,5 +1,8 @@
-node_modules
-.env
+# Ignore environment files everywhere
+**/.env
+
+# Ignore node_modules everywhere
+**/node_modules
 
 # Hardhat files
 /cache
