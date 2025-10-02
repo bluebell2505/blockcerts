@@ -178,8 +178,8 @@ export async function uploadToIPFS(metadata) {
     return {
       metadataHash: jsonHash,
       imageHash: imageHash,
-      imageUrl: `https://ipfs.io/ipfs/${imageHash}`,
-      metadataUrl: `https://ipfs.io/ipfs/${jsonHash}`
+      imageUrl: `https://plum-giant-ape-432.mypinata.cloud/ipfs/${imageHash}`,
+      metadataUrl: `https://plum-giant-ape-432.mypinata.cloud/ipfs/${jsonHash}`
     };
 
   } catch (error) {
