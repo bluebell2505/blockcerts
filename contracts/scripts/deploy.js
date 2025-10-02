@@ -3,9 +3,10 @@ const hre = require("hardhat");
 async function main() {
   const CertificateRegistry = await hre.ethers.getContractFactory("CertificateRegistry");
   const registry = await CertificateRegistry.deploy();
-  await registry.deployed();
+  await registry.waitForDeployment();
 
-  console.log("CertificateRegistry deployed to:", registry.address);
+  const address = await registry.getAddress();
+  console.log("CertificateRegistry deployed to:", address);
 }
 
 main().catch((error) => {

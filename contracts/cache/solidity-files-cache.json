@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\GRIND_QUESTIONMARK\\Web3\\BT project\\blockcerts\\contracts\\contracts\\Certificate.sol": {
+      "lastModificationDate": 1759236547913,
+      "contentHash": "94bc7076b05461207faa0e703f9c8c52",
+      "sourceName": "contracts/Certificate.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "CertificateRegistry"
+      ]
+    }
+  }
+}
