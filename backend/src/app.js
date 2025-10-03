@@ -7,6 +7,9 @@ import eventRoutes from './routes/events.js';
 import registrationRoutes from './routes/registrations.js';
 import attendanceRoutes from './routes/attendance.js';
 import certificateRoutes from './routes/certificates.js';
+import authRoutes from './routes/auth.js';
+import adminRoutes from './routes/admin.js';
+
 
 // Load environment variables ONCE at the app entry point
 dotenv.config();
@@ -26,6 +29,8 @@ app.use(cors());
 app.use(express.json());
 
 // Use real routes
+app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
 app.use('/api/events', eventRoutes);
 app.use('/api/registrations', registrationRoutes);
 app.use('/api/attendance', attendanceRoutes);

@@ -1,0 +1,8 @@
+> exit
+> console.log("Balance:", (await ethers.provider.getBalance(signer.address)).toString());
+] = await ethers.getSigners();
+exit
+console.log("Deployer address:", signer.address);
+const [signer] = await ethers.getSigners();
+const network = console.log("Chain ID:", network.chainId); // Should be 80002
+const provider = ethers.provider;
